@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+p {
+  font-family: "Average Sans", sans-serif;
+  color: #222;
+}
+
+#masthead {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(img/halong-bay.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+#masthead h1 {
+  font-size: 2rem;
+  line-height: 1;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-variant: small-caps;
+  font-weight: 800;
+  color: darkgray;
+  text-align:inherit;
+}
+
+
+#armelle {
+  color:darkblue;
+  font-variant: small-caps;
+}
+
+/* contact */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: darkmagenta;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+@import "about.css";
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.fa {
+  padding: 1rem;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: darkblue;
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  #masthead h1 {
+    font-size: 2.5rem;
+    color:darkgrey;
+  }
+
+  #armelle {
+    color:#cc00cc;
+    font-variant: small-caps;
+  }
+
+}
+
+
+
+@media (min-width: 900px) {
+  #masthead h1 {
+    font-size: 2.5rem;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  #masthead h1 {
+    font-size: 3rem;
+    width: 30%;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.logo img {
+  width: 60px;
+}
+
+#top-header {
+  background-color: #C7320D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 30;
+}
+
+#name {
+  flex:auto;
+  font-variant: small-caps;
+}
+
+
+
+#main-menu {
+  flex: 1 0 20%;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+#main-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#main-menu ul li {
+  margin-left: 1rem;
+  
+}
+#main-menu a {
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#main-menu a:hover {
+  color: rgba(34, 34, 34, 0.6);
+}
+
+main {
+  display: flex;
+  position: relative;
+}
+
+#articles-container {
+  margin: 0 auto;
+  padding: 2rem 0.5rem 2rem 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#articles-container img {
+  width: 100%;
+}
+
+
+
+@media (min-width: 900px) {
+  #articles-container {
+    width: 70vw;
+  }
+}
+.article-header h1 {
+  font-size: 2rem;
+  color: #222222;
+  margin: 2rem 0;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+.article-header h2 {
+  font-size: 1.1rem;
+  color: rgba(34, 34, 34, 0.8);
+  line-height: 1.2;
+  font-style: italic;
+  margin: 0 0 2rem;
+  font-weight: 400;
+}
+
+@media (min-width: 500px) {
+  .article-header h1 {
+    font-size: 4rem;
+    color: #222222;
+    margin: 3rem 0 2rem;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -4px;
+  }
+  .article-header h2 {
+    font-size: 1.5rem;
+    color: rgba(34, 34, 34, 0.8);
+    line-height: 1;
+    font-style: italic;
+    margin: 0 0 3rem;
+    font-weight: 400;
+  }
+}
+.byline p {
+  color: rgba(34, 34, 34, 0.6);
+}
+
+.article p {
+  font-size: 1.1rem;
+}
+@media (min-width: 1200px) {
+  .article p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .article {
+    padding-top: 1rem;
+  }
+}
+#sidebar {
+  display: none;
+  width: 75vw;
+  height: 95vh;
+  overflow-y: auto;
+  position: absolute;
+  right: -80vw;
+  top: -3.2rem;
+  background: #fff;
+  padding: 0;
+  transition: all 200ms ease;
+  z-index: 25;
+}
+#sidebar img {
+  width: 100%;
+}
+#sidebar h4 {
+  padding: 1rem;
+  background: #222;
+  margin: 0;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+@media (min-width: 900px) {
+  #sidebar {
+    display: block;
+    width: 25vw;
+    right: 0;
+  }
+}
+
+#element-1 p {
+  margin: 1rem 0 1.5rem;
+}
+
+#element-2 ul {
+  list-style: none;
+}
+
+.widget {
+  margin-bottom: 3rem;
+  min-height: 200px;
+}
+.widget:nth-child(odd) {
+  background: #eee;
+  color: #222;
+}
+.widget ul,
+.widget p {
+  padding: 0 0.5rem;
+}
+
+hr {
+  margin: 3rem 0;
+  padding: 0;
+  border: 1px solid #efefef;
+}
+
+.more-trigger {
+  cursor: pointer;
+  padding: 0 1rem;
+  border: 1px solid rgba(199, 50, 13, 0.5);
+  border-radius: 5px;
+  transition: all 200ms ease;
+}
+.more-trigger:hover {
+  border-color: #C7320D;
+}
+.more-trigger p {
+  color: #C7320D;
+}
+
+#mobile-trigger-open {
+  width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  position:absolute;
+  z-index: 50;
+  right: 0;
+  text-align: right;
+  
+}
+#mobile-trigger-open p {
+  margin: 0;
+  padding-right: 2rem;
+  
+}
+
+@media (min-width: 900px) {
+  #mobile-trigger-open,
+#mobile-trigger-close {
+    display: none;
+  }
+}
+#mobile-trigger-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#mobile-trigger-close p {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}

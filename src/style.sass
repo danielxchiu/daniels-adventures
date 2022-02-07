@@ -1,0 +1,289 @@
+body
+  margin: 0
+  height: 100vh
+  font-family: 'Open Sans', sans-serif
+  overflow-x: hidden
+  z-index: 1
+  
+p
+  font-family: 'Average Sans', sans-serif
+  color: #222
+  
+  
+#masthead
+  background: linear-gradient(rgba(black, 0), rgba(black, 0.4)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/2fgvaqx-fxs-oskar-krawczyk.jpg)
+    size: cover
+    position: center
+  height: 100vh
+  position: relative
+  
+  h1
+    font-size: 2rem
+    line-height: 1
+    text-shadow: 0px 0px 5px rgba(black, 0.2)
+    position: absolute
+    bottom: 2rem
+    right: 2rem
+    width: 80%
+    font-family: 'Open Sans', sans-serif
+    font-weight: 800
+    color: white
+    text-align: right
+    
+  @media (min-width: 900px)
+    h1
+      font-size: 2.5rem
+      width: 50%
+    
+  @media (min-width: 1200px)
+    h1
+      font-size: 3rem
+      width: 30%
+    
+    
+.logo
+  position: absolute
+  top: 1rem
+  left: 1rem
+  
+  img
+    width: 60px
+    
+  
+#top-header
+  background:
+    color: #C7320D
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 1rem
+  z-index: 30
+  
+  
+#name
+  flex: auto
+  
+  
+#main-menu
+  flex: 1 0 20%
+  ul
+    list-style: none
+    padding: 0
+    display: flex
+    justify-content: flex-end
+    
+    li
+      margin-left: 1.5rem
+      
+  a
+    color: #222
+    text-decoration: none
+    text-transform: uppercase
+    
+    &:hover
+      color: rgba(#222, 0.6)
+      
+      
+main
+  display: flex
+  position: relative
+  
+      
+#articles-container
+  // max-width: 800px
+  margin: 0 auto
+  // flex: 1 0 500px
+  padding: 2rem .5rem 2rem 1rem
+  // margin-right: 250px
+  position: absolute
+  left: 0
+  top: 0
+  
+  
+  img
+    width: 100%
+    
+@media (min-width: 900px)
+  #articles-container
+    width: 70vw
+    
+    
+.article-header
+  h1
+    font-size: 2rem
+    color: rgba(#222, 1)
+    margin: 2rem 0
+    line-height: 1
+    font-weight: 900
+    letter-spacing: -2px
+    
+  h2
+    font-size: 1.1rem
+    color: rgba(#222, 0.8)
+    line-height: 1.2
+    font-style: italic
+    margin: 0 0 2rem
+    font-weight: 400
+    
+@media (min-width: 500px)
+  .article-header
+    h1
+      font-size: 4rem
+      color: rgba(#222, 1)
+      margin: 3rem 0 2rem
+      line-height: 1
+      font-weight: 900
+      letter-spacing: -4px
+
+    h2
+      font-size: 1.5rem
+      color: rgba(#222, 0.8)
+      line-height: 1
+      font-style: italic
+      margin: 0 0 3rem
+      font-weight: 400
+    
+    
+.byline
+  p
+    color: rgba(#222, 0.6)
+    
+   
+.article
+  // padding-top: 2rem
+  
+  p
+    font-size: 1.1rem
+    
+  @media (min-width: 1200px)
+    p
+      font-size: 1.3rem
+    
+@media (min-width: 500px)
+  .article
+    padding-top: 2rem
+    
+
+    
+  
+#sidebar
+  display: none
+  width: 75vw
+  height: 95vh
+  overflow-y: auto
+  position: absolute
+  right: -80vw
+  top: -3.2rem
+  // margin-top: 3.25rem
+  // border-left: 1px solid #ccc
+  background: #fff
+  padding: 0
+  transition: all 200ms ease
+  z-index: 25
+  
+  img
+    width: 100%
+  
+  h4
+    padding: 1rem
+    background: #222
+    margin: 0
+    color: white
+    // text-transform: uppercase
+    letter-spacing: 1px
+    font-weight: 400
+
+// @media (min-width: 500px)
+//   #sidebar
+//     width: 50vw
+    
+@media (min-width: 900px)
+  #sidebar
+    display: block
+    width: 25vw
+    right: 0
+    
+#element-1
+  p
+    margin: 1rem 0 1.5rem
+    
+    
+#element-2
+  ul
+    list-style: none
+    
+    
+.widget
+  margin-bottom: 3rem
+  min-height: 200px
+  
+  &:nth-child(odd)
+    background: #eee
+    color: #222
+    
+  ul,
+  p
+    padding: 0 .5rem
+    
+    
+hr
+  margin: 3rem 0
+  padding: 0
+  border: 1px solid #efefef
+  
+  
+.more-trigger
+  cursor: pointer
+  padding: 0 1rem
+  border: 1px solid rgba(#C7320D, 0.5)
+  border-radius: 5px
+  transition: all 200ms ease
+  
+
+  &:hover
+    // background: #eee
+    border-color: #C7320D
+  
+  p
+    color: #C7320D
+ 
+  
+#mobile-trigger-open
+  width: 100%
+  font-size: 2rem
+  cursor: pointer
+  position: absolute
+  z-index: 50
+  right: 0
+  // top: 0
+  text-align: right
+
+  p
+    margin: 0
+    padding-right: 2rem
+      
+    
+@media (min-width: 900px)
+  #mobile-trigger-open,
+  #mobile-trigger-close
+    display: none
+    
+    
+#mobile-trigger-close
+  font-size: 1.5rem
+  cursor: pointer
+  
+  p
+    padding: .5rem
+    margin: 0
+    
+    
+#overlay
+  height: 100%
+  width: 100%
+  background:
+    color: rgba(black, 0.6)
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 10
